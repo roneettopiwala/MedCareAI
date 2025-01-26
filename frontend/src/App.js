@@ -78,7 +78,15 @@ function App() {
       {response && (
         <div>
           <h2>Response:</h2>
-          <pre>{JSON.stringify(response, null, 2)}</pre>
+          <ul>
+            {response.output && (
+              <li>
+                {response.output.output.split('\n').map((line, index) => (
+                  <div key={index}>{line}</div>
+                ))}
+              </li>
+            )}
+          </ul>
         </div>
       )}
 
