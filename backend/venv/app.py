@@ -4,7 +4,6 @@ import requests
 import time
 
 app = Flask(__name__)
-
 CORS(app)
 
 @app.route('/trigger-webhook', methods=['POST'])
@@ -12,12 +11,25 @@ def trigger_webhook():
     try:
         data = request.get_json()
         
+        # Get city data from IP API
+        zip_url = "https://api.ipapi.com/check?access_key=28dd01bf4b866caf4d8ae833d7bae3a8"
+        zip_response = requests.get(zip_url)
+        zip_data = zip_response.json()
+        zip = zip_data.get("zip", "Unknown")
+        
+        # Add city to pipeline inputs
+        pipeline_inputs = data["pipeline_inputs"]
+        pipeline_inputs.append({
+            "input_name": "Zip",
+            "value": zip
+        })
+        
         # Start pipeline
         url = "https://api.gumloop.com/api/v1/start_pipeline"
         payload = {
             "user_id": data["user_id"],
             "saved_item_id": data["saved_item_id"],
-            "pipeline_inputs": data["pipeline_inputs"]
+            "pipeline_inputs": pipeline_inputs
         }
         headers = {
             "Authorization": "Bearer e24ad03b6aa34db8bf7806c348e1d084",
