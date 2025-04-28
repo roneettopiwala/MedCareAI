@@ -1,3 +1,3 @@
-# MaxCareAI
+# MedCareAI
 
 Project for McHacks
