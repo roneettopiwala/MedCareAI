@@ -1,7 +1,7 @@
 
 # MedCareAI
 
-Project for McHacks 2025
+Won best AI Project @ McHacks 2025
 
 ## Key Features & Benefits
 
