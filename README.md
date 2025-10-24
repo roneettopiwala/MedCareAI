@@ -8,11 +8,7 @@ Project for McHacks 2025
 MedCareAI aims to revolutionize healthcare access and delivery through the following key features:
 
 *   **AI-Powered Diagnosis Assistance:** Utilizes machine learning to provide preliminary diagnosis suggestions based on user-provided symptoms and medical history.
-*   **Automated Appointment Scheduling:** Streamlines the appointment booking process by automatically finding available slots based on user preferences and doctor availability.
-*   **Remote Patient Monitoring:** Enables healthcare providers to remotely monitor patient vitals and health data, improving patient care and reducing hospital readmissions.
 *   **Personalized Healthcare Recommendations:** Offers tailored health advice and recommendations based on individual patient profiles and health conditions.
-*   **Integration with Existing Healthcare Systems:** Seamlessly integrates with existing electronic health record (EHR) systems for efficient data management and interoperability.
-
 ## Prerequisites & Dependencies
 
 Before installing and running MedCareAI, ensure that you have the following prerequisites installed:
@@ -21,7 +17,6 @@ Before installing and running MedCareAI, ensure that you have the following prer
 *   **Node.js:** Required for frontend development and package management.
 *   **pip:** Python package installer. Comes with most Python installations.
 *   **Flask:** Python web framework.
-*   **C Compiler:** (gcc, clang, etc.) Needed if any C extensions require compilation.
 *   **Git:** for version control and cloning the repository.
 
 ## Installation & Setup Instructions
