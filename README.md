@@ -1,7 +1,7 @@
 
 # MedCareAI
 
-Won best AI Project @ McHacks 2025
+Won best AI Project @ McHacks 2025, https://devpost.com/software/maxcareai
 
 ## Key Features & Benefits
 
