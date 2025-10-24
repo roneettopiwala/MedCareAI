@@ -18,6 +18,7 @@ Before installing and running MedCareAI, ensure that you have the following prer
 *   **pip:** Python package installer. Comes with most Python installations.
 *   **Flask:** Python web framework.
 *   **Git:** for version control and cloning the repository.
+*   *Gumloop API* to gain access to the trained llm 
 
 ## Installation & Setup Instructions
 
